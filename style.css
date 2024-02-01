@@ -15,6 +15,9 @@ body {
   font-weight: 400;
   line-height: 36px; /* 150% */
 }
+.titulo-destaque {
+  color: rgb(231, 88, 44);
+}
 
 /* Estilos para o cabeçalho */
 header {
@@ -34,9 +37,9 @@ header {
 
 /* Estilos para o logo no cabeçalho */
 header img {
-  max-width: 100px; /* Ajuste conforme necessário */
+  max-width: 100px;  
   height: auto;
-  margin-right: 10px; /* Espaçamento entre o logo e o texto */
+  margin-right: 10px;  
   
 }
 
@@ -56,7 +59,7 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
-  transition: color 0.3s ease; /* Adiciona uma transição suave na cor ao passar o mouse */
+  transition: color 0.3s ease; /*   transição suave na cor ao passar o mouse */
 }
 
 nav a:hover {
@@ -85,8 +88,8 @@ main {
 
 /* Estilos para a seção do texto e botões */
 .text-section {
-  flex-grow: 1; /* Ajusta para crescer tanto quanto possível */
-  margin-right: 10px; /* Adiciona espaço à direita da seção de texto e botões */
+  flex-grow: 1; 
+  margin-right: 10px; 
 }
 
 /* Estilos para o título secundário */
@@ -102,7 +105,7 @@ p {
 /* Estilos para os botões */
 button {
  
-  margin-top: 10px; /* Adiciona espaço entre os botões e o parágrafo */
+  margin-top: 10px; /*  espaço entre os botões e o parágrafo */
   background-color: #22D4FD;
   color: #000;
   border: 0px solid #22D4FD;
@@ -137,14 +140,14 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  font-size: 18px; /* Ajuste o valor conforme necessário */
-  padding: 15px; /* Ajuste a altura reduzindo o valor de padding */
-  height: 30px; /* Ajuste a altura conforme necessário */
+  font-size: 18px;  
+  padding: 15px;  
+  height: 30px;  
 }
 
 /* Estilo para os parágrafos dentro do footer */
 footer p {
-  margin: 0; /* Remova a margem para evitar espaçamento adicional */
+  margin: 0; /* Remover a margem para evitar espaçamento adicional */
 }
 
 /* Estilo para telas menores */
