@@ -1,0 +1,203 @@
+/* Reset de estilos para garantir uma aparência mais consistente entre navegadores */
+body, h1, p, button, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #d9d1e2;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #03234d;
+  color: white;
+  padding: 15px 0;
+}
+
+/* Estilos para o container dentro do cabeçalho */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para o logo no cabeçalho */
+header img {
+  max-width: 100px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-right: 10px; /* Espaçamento entre o logo e o texto */
+  
+}
+
+/* Estilos para o título principal */
+h1 {
+  font-size: 24px;
+  color:  white;
+}
+
+/* Estilos para a navegação */
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Adiciona uma transição suave na cor ao passar o mouse */
+}
+
+nav a:hover {
+  color: #22D4FD; /* Altera a cor ao passar o mouse */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #d9d1e2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribui os itens igualmente no espaço disponível */
+}
+
+/* Estilos para a seção do conteúdo e imagem */
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Estilos para a seção do texto e botões */
+.text-section {
+  flex-grow: 1; /* Ajusta para crescer tanto quanto possível */
+  margin-right: 10px; /* Adiciona espaço à direita da seção de texto e botões */
+}
+
+/* Estilos para o título secundário */
+h2 {
+  color: #000;
+}
+
+/* Estilos para o texto do conteúdo principal */
+p {
+  color: #000;
+}
+
+/* Estilos para os botões */
+button {
+ 
+  margin-top: 10px; /* Adiciona espaço entre os botões e o parágrafo */
+  background-color: #22D4FD;
+  color: #000;
+  border: 0px solid #22D4FD;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 280px;
+  height: 79px;
+  gap: 16px;
+  flex-shrink: 0;
+  font-size: 25px;
+}
+
+/* Estilos para a seção da imagem */
+.image-section {
+  flex-shrink: 0; /* Evita que a seção da imagem encolha */
+}
+
+/* Estilos para a imagem */
+img {
+  max-width: 467.705px;
+  height: 532px;
+  border-radius: 16px;
+  background: url(./imagens/foto.jpg), lightgray -39.262px -50.143px / 212.432% 124.461% no-repeat;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #03234d;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 18px; /* Ajuste o valor conforme necessário */
+  padding: 15px; /* Ajuste a altura reduzindo o valor de padding */
+  height: 30px; /* Ajuste a altura conforme necessário */
+}
+
+/* Estilo para os parágrafos dentro do footer */
+footer p {
+  margin: 0; /* Remova a margem para evitar espaçamento adicional */
+}
+
+/* Estilo para telas menores */
+@media only screen and (max-width: 600px) {
+  /* Estilos para o cabeçalho */
+  header {
+    padding: 10px 0;
+  }
+
+  /* Estilos para o container dentro do cabeçalho */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Estilos para o logo no cabeçalho */
+  header img {
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para a navegação */
+  nav {
+    margin-top: 10px;
+  }
+
+  /* Estilos para o conteúdo principal */
+  main {
+    flex-direction: column;
+  }
+
+  /* Estilos para a seção do conteúdo e imagem */
+  .content-section {
+    flex-direction: column;
+  }
+
+  /* Estilos para a seção do texto e botões */
+  .text-section {
+    margin-right: 0;
+  }
+
+  /* Estilos para os botões */
+  button {
+    width: 100%;
+  }
+
+  /* Estilos para a seção da imagem */
+  .image-section {
+    margin-top: 10px;
+  }
+
+  /* Estilos para a imagem */
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
