@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
 /* Reset de estilos para garantir uma aparência mais consistente entre navegadores */
 * {
   margin: 0;
@@ -69,20 +72,21 @@ nav a:hover {
 
 /* Estilos para o conteúdo principal */
 main {
-  max-width: 80%;
+  max-width: 60%;
   margin: 20px auto;
   padding: 20px;
   background-color: #d9d1e2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribui os itens igualmente no espaço disponível */
+ 
 }
 
 .apresentacao{
   display: flex;
   align-items: center;
- 
+  justify-content: space-between; /* Distribui os itens igualmente no espaço disponível */
+  
 }
 /* Estilos para a seção do conteúdo e imagem */
 .content-section {
@@ -90,6 +94,9 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+
 }
 
 /* Estilos para a seção do texto e botões */
@@ -101,6 +108,7 @@ main {
 /* Estilos para o título secundário */
 h2 {
   color: #000;
+  font-family: 'Krona One', sans-serif;
 }
 
 /* Estilos para o texto do conteúdo principal */
@@ -140,20 +148,20 @@ img {
 /* Estilos para o rodapé */
 footer {
   background-color: #03234d;
-  color: white;
   text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   font-size: 18px;  
-  padding: 15px;  
-  height: 30px;  
+  padding: 20px;  
+  height: 60px;  
 }
 
 /* Estilo para os parágrafos dentro do footer */
 footer p {
   margin: 0; /* Remover a margem para evitar espaçamento adicional */
+  color: white;
 }
 
 /* Estilo para telas menores */
