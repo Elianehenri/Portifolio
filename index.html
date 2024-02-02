@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portifolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <img src="./imagens/logo.jpg" alt="Logo">
-            <h1>Portfólio</h1>
-            <nav>
-                <a href="https://github.com/Elianehenri">Projetos</a>
-                <a href="https://www.linkedin.com/in/eliane-henriqueta">LinkedIn</a> 
-                <a href="mailto:elianehenriqueta@gmail.com">Contato</a> 
-            </nav>
+      <div class="header-container">
+        <img src="./imagens/logo.jpg" alt="Logo" />
+        <h1>Portfólio</h1>
+        <nav>
+          <a class="header-links" href="https://github.com/Elianehenri">Projetos</a>
+          <a class="header-links" href="https://www.linkedin.com/in/eliane-henriqueta">LinkedIn</a>
+          <a class="header-links" href="mailto:elianehenriqueta@gmail.com">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="apresentacao">
+      <section class="apresentacao__conteudo">
+        <h2 class="apresentacao__conteudo__titulo">
+          Olá, meu nome é <strong class="titulo-destaque">Eliane</strong>
+        </h2>
+
+        <p class="apresentacao__conteudo__texto">
+          Apaixonada por tecnologia procuro estar em constante evolução no
+          universo do desenvolvimento web. <br />Com uma base sólida em C#,
+          .NET, React, SQL Server e MongoDB, conquistei conhecimentos sólidos
+          durante meu curso de Desenvolvedor Web. <br />Atualmente, estou
+          aprimorando minhas habilidades como participante do programa
+          Desenvolve 2024 do Boticário.<br />
+          Estou entusiasmado em contribuir para projetos inovadores e continuar
+          aprendendo para me tornar um profissional ainda mais qualificado.
+        </p>
+
+        <div class="apresentacao__links">
+          <a
+            class="apresentacao__links__link"
+            href="https://instagram.com/elianehenriqueta"
+            >Instagram</a
+          >
+          <a
+            class="apresentacao__links__link"
+            href="https://github.com/Elianehenri"
+            >GitHub</a
+          >
         </div>
-    </header>
-              
-          
-    </header>
-    <main >
-        <section class="content-section apresentacao ">
-            <div class="text-section">
-              <h2>Olá, meu nome é <strong class="titulo-destaque">Eliane</strong></h2>
-              <br>
-              <p>Apaixonada por tecnologia procuro estar  em constante evolução no universo do desenvolvimento web.</p>
-              <p>Com uma base sólida em C#, .NET, React, SQL Server e MongoDB, conquistei conhecimentos sólidos durante meu curso de Desenvolvedor Web.</p>
-              
-              <p>Atualmente, estou aprimorando minhas habilidades como participante do programa Desenvolvedor 2024 do Boticário. </p>
-              <p>Estou entusiasmado em contribuir para projetos inovadores e continuar aprendendo para me tornar um profissional ainda mais qualificado.</p>
-              <br>
-              <div>
-                <button onclick="redirecionar('https://instagram.com/elianehenriqueta')">Instagram</button>
-                <button onclick="redirecionar('https://github.com/Elianehenri')">Github</button>
-              </div>
-         
-            </div>
-        </section>
-          <div class="image-section">
-            <img src="./imagens/foto.jpg" alt="Foto menina programando">
-          </div>
-        
-        
-        <script>
-          function redirecionar(url) {
-            window.location.href = url;
-          }
-        </script>
-      </main>
-      
-    <footer>     
-        <p>© 2024 Eliane - Todos os direitos reservados.</p> 
-      </footer>
-  
-</body>
+      </section>
+      <div class="image-section">
+        <img src="./imagens/foto.jpg" alt="Foto menina programando" />
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 Eliane - Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>

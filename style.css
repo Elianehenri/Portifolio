@@ -1,33 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
 /* Reset de estilos para garantir uma aparência mais consistente entre navegadores */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Estilos gerais para o corpo do documento */
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #d9d1e2;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px; 
   height: 100vh;
+  box-sizing: border-box;
+  background-color: #d9d1e2;
+  color: #f6f6f6;
 }
+
 .titulo-destaque {
   color: rgb(231, 88, 44);
+  font-family: "Krona One", sans-serif;
 }
 
 /* Estilos para o cabeçalho */
 header {
   background-color: #03234d;
-  color: white;
+  color: #f6f6f6;
   padding: 15px 0;
+}
+.header-links {
+  color: #f6f6f6;
+  text-decoration: none;
+  gap: 60px;
+  padding: 10px 15px; /* Ajuste o padding conforme necessário */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor ao passar o mouse */
+}
+
+.header-links:hover {
+  background-color: #22D4FD; /* Altera a cor ao passar o mouse */
 }
 
 /* Estilos para o container dentro do cabeçalho */
@@ -41,111 +48,76 @@ header {
 
 /* Estilos para o logo no cabeçalho */
 header img {
-  max-width: 100px;  
-  height: auto;
-  margin-right: 10px;  
-  
+  max-width: 100px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 /* Estilos para o título principal */
-h1 {
-  font-size: 24px;
-  color:  white;
-}
 
-/* Estilos para a navegação */
-nav {
-  display: flex;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-  transition: color 0.3s ease; /*   transição suave na cor ao passar o mouse */
-}
-
-nav a:hover {
-  color: #22D4FD; /* Altera a cor ao passar o mouse */
-}
 
 /* Estilos para o conteúdo principal */
-main {
-  max-width: 60%;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #d9d1e2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
- 
-}
-
-.apresentacao{
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Distribui os itens igualmente no espaço disponível */
-  
-}
-/* Estilos para a seção do conteúdo e imagem */
-.content-section {
+.apresentacao {
+  margin: 5% 15% ;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-
 }
 
-/* Estilos para a seção do texto e botões */
-.text-section {
-  flex-grow: 1; 
-  margin-right: 10px; 
+/* Estilos para a seção do conteúdo e imagem */
+.apresentacao__conteudo {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* Estilos para o título secundário */
-h2 {
+.apresentacao__conteudo__titulo {
+  font-size: 16px;
+  font-family: "Krona One", sans-serif;
   color: #000;
-  font-family: 'Krona One', sans-serif;
+  
 }
 
-/* Estilos para o texto do conteúdo principal */
-p {
+.apresentacao__conteudo__texto {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   color: #000;
+  margin-bottom: 20px; /* Adicionando espaço entre o texto e a imagem */
 }
-
-/* Estilos para os botões */
-button {
- 
-  margin-top: 10px; /*  espaço entre os botões e o parágrafo */
-  background-color: #22D4FD;
-  color: #000;
-  border: 0px solid #22D4FD;
+.apresentacao__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /*margem entre os links */
+}
+.apresentacao__links__link {
+  background-color: #22d4fd;
+  width: 320px;
+  text-align: center;
   border-radius: 16px;
-  cursor: pointer;
-  width: 280px;
-  height: 79px;
-  gap: 16px;
-  flex-shrink: 0;
-  font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
   font-weight: 600;
-
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  flex-grow: 1;
 }
 
 /* Estilos para a seção da imagem */
 .image-section {
+  -ms-flex-negative: 0;
   flex-shrink: 0; /* Evita que a seção da imagem encolha */
 }
 
 /* Estilos para a imagem */
 img {
-  max-width: 467.705px;
-  height: 532px;
+  max-width: 360px;
+  height: 350px;
   border-radius: 16px;
-  background: url(./imagens/foto.jpg), lightgray -39.262px -50.143px / 212.432% 124.461% no-repeat;
+  background: url(./imagens/foto.jpg),
+    lightgray -39.262px -50.143px / 212.432% 124.461% no-repeat;
 }
 
 /* Estilos para o rodapé */
@@ -156,19 +128,141 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  font-size: 18px;  
-  padding: 20px;  
-  height: 60px;  
+  font-size: 12px;
+  padding: 18px;
+  height: 1.5px;
 }
 
 /* Estilo para os parágrafos dentro do footer */
 footer p {
   margin: 0; /* Remover a margem para evitar espaçamento adicional */
-  color: white;
+  color: #f6f6f6;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+/* Reset de estilos para garantir uma aparência mais consistente entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos gerais para o corpo do documento */
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #d9d1e2;
+  color: #f6f6f6;
+}
+
+.titulo-destaque {
+  color: rgb(231, 88, 44);
+  font-family: "Krona One", sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #03234d;
+  color: #f6f6f6;
+  padding: 15px 0;
+}
+.header-links {
+  color: #f6f6f6;
+  text-decoration: none;
+  gap: 60px;
+  padding: 10px 15px; /* Ajuste o padding conforme necessário */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor ao passar o mouse */
+}
+
+.header-links:hover {
+  background-color: #22D4FD; /* Altera a cor ao passar o mouse */
+}
+
+/* Estilos para o container dentro do cabeçalho */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para o logo no cabeçalho */
+header img {
+  max-width: 100px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Estilos para o título principal */
+
+
+/* Estilos para o conteúdo principal */
+.apresentacao {
+  margin: 5% 15% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para a seção do conteúdo e imagem */
+.apresentacao__conteudo {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Estilos para o título secundário */
+.apresentacao__conteudo__titulo {
+  font-size: 16px;
+  font-family: "Krona One", sans-serif;
+  color: #000;
+  
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  margin-bottom: 20px; /* Adicionando espaço entre o texto e a imagem */
+}
+.apresentacao__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /*margem entre os links */
+}
+.apresentacao__links__link {
+  background-color: #22d4fd;
+  width: 320px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  flex-grow: 1;
+}
+
+/* Estilos para a seção da imagem */
+.image-section {
+  -ms-flex-negative: 0;
+  flex-shrink: 0; /* Evita que a seção da imagem encolha */
+}
+
+/* Estilos para a imagem */
+img {
+  max-width: 360px;
+  height: 350px;
+  border-radius: 16px;
+  background: url(./imagens/foto.jpg),
+    lightgray -39.262px -50.143px / 212.432% 124.461% no-repeat;
 }
 
 /* Estilo para telas menores */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   /* Estilos para o cabeçalho */
   header {
     padding: 10px 0;
@@ -185,39 +279,31 @@ footer p {
     margin-bottom: 10px;
   }
 
-  /* Estilos para a navegação */
-  nav {
-    margin-top: 10px;
-  }
-
-  /* Estilos para o conteúdo principal */
-  main {
+  /* Estilos para a seção do conteúdo e imagem */
+  .apresentacao {
     flex-direction: column;
+    margin: 5% 10%;
   }
 
   /* Estilos para a seção do conteúdo e imagem */
-  .content-section {
-    flex-direction: column;
-  }
-
-  /* Estilos para a seção do texto e botões */
-  .text-section {
-    margin-right: 0;
-  }
-
-  /* Estilos para os botões */
-  button {
+  .apresentacao__conteudo {
     width: 100%;
   }
 
-  /* Estilos para a seção da imagem */
-  .image-section {
-    margin-top: 10px;
+  /* Estilos para os botões */
+  .apresentacao__links__link {
+    width: 100%;
   }
 
   /* Estilos para a imagem */
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+  }
+
+  /* Estilos para o rodapé */
+  footer {
+    font-size: 10px;
+    padding: 10px;
   }
 }
