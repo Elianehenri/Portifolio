@@ -6,7 +6,10 @@ Do Programa Desenvolve 2024 do Grupo O BOticario.
 
 
 <img src= "https://imgix.cosmicjs.com/436f6fc0-c1fc-11ee-9302-8f6baea07579-Portifolio.png">
+
+
 # Visualizar o projeto.
+ 
 Acesse o [link](https://elianehenri.github.io/Portifolio/) para visualizar o protifolio.
 
 # Autor
