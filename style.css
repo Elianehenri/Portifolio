@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 
 /* Reset de estilos para garantir uma aparência mais consistente entre navegadores */
@@ -130,6 +130,9 @@ button {
   gap: 16px;
   flex-shrink: 0;
   font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+
 }
 
 /* Estilos para a seção da imagem */
