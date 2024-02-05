@@ -4,55 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Portifolio</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <img src="./imagens/logo.jpg" alt="Logo" />
-        <h2>Portfólio</h2>
-        <nav>
-          <a class="header-links" href="https://github.com/Elianehenri">Projetos</a>
-          <a class="header-links" href="https://www.linkedin.com/in/eliane-henriqueta">LinkedIn</a>
-          <a class="header-links" href="mailto:elianehenriqueta@gmail.com">Contato</a>
-        </nav>
-      </div>
+    <header class="cabecalho">
+      <nav class="cabecalho__menu">
+     
+        <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        <!-- <a class="cabecalho__menu__link" href="curriculo.html">Curriculo</a> -->
+      </nav>
     </header>
 
     <main class="apresentacao">
       <section class="apresentacao__conteudo">
         <h1 class="apresentacao__conteudo__titulo">
-   
-          Leve a performance do seu empreendimento online para um patamar superior <strong class="titulo-destaque">com um Front-end de excelência!</strong>
+          Leve a performance do seu empreendimento online para um patamar
+          superior
+          <strong class="titulo-destaque"
+            >com um Front-end de excelência!</strong
+          >
         </h1>
 
         <p class="apresentacao__conteudo__texto">
-          Olá, sou Eliane, uma desenvolvedora Full Stack com expertise em C#, .Net, HTML e CSS.
-          Meu foco é auxiliar pequenos negócios na concretização de suas ideias. Vamos conversar? Estou aqui para ajudar!
-          
+          Olá, sou Eliane, uma desenvolvedora Full Stack com expertise em C#,
+          .Net, HTML e CSS. Meu foco é auxiliar pequenos negócios na
+          concretização de suas ideias. Vamos conversar? Estou aqui para ajudar!
         </p>
 
         <div class="apresentacao__links">
-          <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-          <a
-            class="apresentacao__links__link"
-            href="https://instagram.com/elianehenriqueta"
-            >Instagram</a
-          >
-          <a
-            class="apresentacao__links__link"
-            href="https://github.com/Elianehenri"
-            >GitHub</a
-          >
+          <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
+
+          <a class="apresentacao__links__link" href="https://github.com/Elianehenri">
+            <img   src="./assets/Icones/github.png" alt="github" />
+            GitHub </a>
+    
+          <a class="apresentacao__links__link"  href="https://instagram.com/elianehenriqueta">
+            <img   src="./assets/Icones/instagram.png"  alt="instagram"
+            />Instagram</a >
+          <a class="apresentacao__links__link"  href="https://instagram.com/elianehenriqueta">
+              <img   src="./assets/Icones/linkedin.png"  alt="linkedin"
+            />LinkedIn</a >
+
         </div>
       </section>
       <div class="image-section">
-        <img src="./imagens/foto.jpg" alt="Foto menina programando" />
+        <img  src="./assets/Imagens/foto.jpg" alt="Foto menina programando" />
       </div>
     </main>
 
-    <footer>
+    <footer class="rodape">
       <p>© 2024 Eliane - Todos os direitos reservados.</p>
     </footer>
   </body>
